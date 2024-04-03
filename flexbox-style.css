@@ -1,0 +1,154 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 2px solid grey;
+    margin: 17px;
+}
+
+.logo {
+    flex: 0;
+    padding-right: 10px;
+    background: #b9d9a9;
+}
+
+.nav {
+    padding-left: 500px;
+    text-align: right;
+    background: #b9d9a9;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.splash{
+    padding: 150px;
+    margin: 100px;
+    background-color: #d9d9d9;
+    flex: 1;
+    border: 2px solid grey;
+}
+
+.proces{
+    padding: 150px;
+    margin: 100px;
+    background-color: #d9d9d9;
+    flex: 1;
+    border: 2px solid grey;
+}
+
+@media (min-width: 600px) {
+    .main {
+        flex-direction: row;
+    }
+    
+    .splash, .proces {
+        margin: 10px;
+    }
+}
+
+.tilbud-fullwidth {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: lightgray;
+    border: 2px solid grey;
+    margin: 15px;
+}
+
+.tilbud-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px;
+    
+}
+
+.tilbud {
+    flex-grow: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #b9d9a9;
+    text-align: center;
+}
+
+#tilbud3 {
+    height: 140px;
+}
+#tilbud2 {
+    height: 80px;
+}
+#tilbud1 {
+    display: flex;
+    height: 30px;
+   
+}
+
+
+footer {
+    padding: 20px;
+    margin: 30px 17px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 2px solid grey;
+}
+
+@media screen and (max-width: 594px) {
+.nav {
+    padding-left: 50px;
+    text-align: right;
+    background: #b9d9a9;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.tilbud-fullwidth {
+    display: flex;
+    flex-direction: column;
+}
+
+.splash {
+    order: 1;
+}
+
+.tilbud-fullwidth {
+    order: 2; /* This will place it between splash and proces */
+}
+
+.proces {
+    order: 3;
+}
+
+footer {
+    order: 4;
+}
+
+}
+#tilbud3 {
+    height: 30px;
+}
+#tilbud2 {
+    height: 80px;
+}
+#tilbud1 {
+    height: 140px;
+   
+} 
